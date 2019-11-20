@@ -23,18 +23,3 @@ proc export
   outfile=REFFILE
   replace;
 run;
-
-/*
-data colodata;
-	merge WORK.csapmerg WORK.gradmerg;
-	by District District_Number;
-run;
-
-/*
-sum(_08___%_Unsatisfactory),
-sum(_08___%_Partially_Proficient),
-sum(_08___%_Proficient),
-sum(_08___%_Advanced),
-sum(_08___%_Proficient_&_Advanced),
-sum(_08___%_Not_Scored)
-*/
